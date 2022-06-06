@@ -1,5 +1,5 @@
 <div *ngIf="data">
-    <app-section-header [title]="data.title"></app-section-header>
+    <app-section-header *ngIf="data.title" [title]="data.title"></app-section-header>
     <div>
         {{data.content}}
     </div>
