@@ -1,8 +1,7 @@
+<div *ngIf="context.getData() as data">
+    <div *ngFor="let test of data.sections">
 
-<div class="uk-alert uk-alert-success">
-  Success
+        <!-- Render different types of sections based upon data present -->
+        <app-section [data]="test"></app-section>
+    </div>
 </div>
-
-<span class="uk-text-italic">
-  Test
-</span>

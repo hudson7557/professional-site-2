@@ -4,6 +4,4 @@ builder.Services.AddSingleton<GetHomepage>();
 
 var app = builder.Build();
 
-
-
 app.Run();
