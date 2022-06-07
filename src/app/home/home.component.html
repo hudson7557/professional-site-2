@@ -1,7 +1,23 @@
-<div *ngIf="context.getData() as data">
-    <div *ngFor="let test of data.sections">
+<div *ngIf="context.getData() as data"
+    uk-grid
+>
+    <app-text-section [data]="data.aboutMe"
+        class="uk-width-1-1"
+    ></app-text-section>
 
-        <!-- Render different types of sections based upon data present -->
-        <app-section [data]="test"></app-section>
-    </div>
+    <app-text-section [data]="data.professionalExperience"
+        class="uk-width-1-1"
+    ></app-text-section>
+
+    <app-list-section [data]="data.languages"
+        class="uk-width-1-1"
+    ></app-list-section>
+
+    <app-technical-section [data]="data.typesOfProblems"
+        class="uk-width-1-1"
+    ></app-technical-section>
+
+    <app-text-section [data]="data.programmingPhilosophy"
+        class="uk-width-1-1"
+    ></app-text-section>
 </div>

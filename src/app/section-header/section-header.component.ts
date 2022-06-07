@@ -9,4 +9,5 @@ export class SectionHeaderComponent {
 
     @Input()
     title?: string;
+
 }

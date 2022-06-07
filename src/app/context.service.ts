@@ -9,12 +9,35 @@ export class AppContext {
     */
     public getData(): AppData {
         let stubData = {
-            sections: [
-                {
-                    title: 'About Me',
-                    content: 'Blah'
-                }
-            ]
+            aboutMe: {
+                title: 'About Me',
+                content: 'Blah'
+            },
+            professionalExperience: {
+                title: 'Professional Experience',
+                content: 'Blah'
+            },
+            languages: {
+                title: 'Languages',
+                listItems: [
+                    'One',
+                    'Two',
+                    'Three'
+                ]
+            },
+            typesOfProblems: {
+                title: 'Types of Problems I\'ve Worked On',
+                sections: [
+                    {
+                        title: 'Angular Salesforce Integrations',
+                        content: 'Blah blah blah'
+                    }
+                ]
+            },
+            programmingPhilosophy: {
+                title: 'Programming Philosophy',
+                content: 'Always Sunny'
+            }
         };
 
         return stubData;

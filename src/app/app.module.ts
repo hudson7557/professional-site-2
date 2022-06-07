@@ -6,8 +6,10 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AppContext } from './context.service';
-import { SectionComponent } from './section/section.component';
+import { TextSectionComponent } from './text-section/text-section.component';
 import { SectionHeaderComponent } from './section-header/section-header.component';
+import { ListSectionComponent } from './list-section/list-section.component';
+import { TechnicalSectionComponent } from './technical-section/technical-section.component';
 
 const ROUTES: Routes = [
     {
@@ -21,8 +23,10 @@ const ROUTES: Routes = [
         AppComponent,
         HomeComponent,
         NavbarComponent,
-        SectionComponent,
-        SectionHeaderComponent
+        TextSectionComponent,
+        SectionHeaderComponent,
+        ListSectionComponent,
+        TechnicalSectionComponent
     ],
     imports: [
         BrowserModule,

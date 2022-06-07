@@ -2,11 +2,11 @@ import { Component, Input } from '@angular/core';
 import { TextSectionData } from './../models/text-section-data';
 
 @Component({
-    selector: 'app-section',
-    templateUrl: './section.component.html',
-    styleUrls: ['./section.component.scss'],
+    selector: 'app-text-section',
+    templateUrl: './text-section.component.html',
+    styleUrls: ['./text-section.component.scss'],
 })
-export class SectionComponent {
+export class TextSectionComponent {
 
     @Input()
     public data?: TextSectionData;
