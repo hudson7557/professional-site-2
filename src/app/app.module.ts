@@ -8,11 +8,16 @@ import { AppContext } from './context.service';
 import { TextSectionComponent } from './text-section/text-section.component';
 import { ListSectionComponent } from './list-section/list-section.component';
 import { TechnicalSectionComponent } from './technical-section/technical-section.component';
+import { ErrorComponent } from './error/error.component';
 
 const ROUTES: Routes = [
     {
         path: '',
         component: HomeComponent
+    },
+    {
+        path: '**',
+        component: ErrorComponent
     }
 ];
 
@@ -29,7 +34,8 @@ const routerOptions: ExtraOptions = {
         NavbarComponent,
         TextSectionComponent,
         ListSectionComponent,
-        TechnicalSectionComponent
+        TechnicalSectionComponent,
+        ErrorComponent
     ],
     imports: [
         BrowserModule,
