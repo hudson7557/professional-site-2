@@ -3,16 +3,21 @@
 >
     <!-- Loop through the list of data and determine which sections to render -->
     <ng-container *ngFor="let data of appData.data">
+        <a id="{{data.anchor}}"></a>
+
         <app-text-section *ngIf="data.sectionType == 'text'"
             [data]="data"
+            class="uk-width-1-1"
         ></app-text-section>
 
         <app-list-section *ngIf="data.sectionType == 'list'"
             [data]="data"
+            class="uk-width-1-1"
         ></app-list-section>
 
         <app-technical-section  *ngIf="data.sectionType == 'technical'"
             [data]="data"
+            class="uk-width-1-1"
         ></app-technical-section>
     </ng-container>
 </div>

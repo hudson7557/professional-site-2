@@ -26,3 +26,5 @@ There's reflection, there's instance of if I use classes, there's also the possi
 
 
 The expandable sections need to be a component.
+
+Need a way to make sure that the ids are not the same... I don't super like linking off of the anchor ids but it does work...
