@@ -1,5 +1,5 @@
-<div *ngIf="data">
-THink about this... overthinking it.
+<div *ngIf="data" #{{data.anchor}}>
+<h3>Some title</h3>
     <ul class="uk-list uk-list-disc">
         <li *ngFor="let item of data.listItems"
             class="uk-width-1-2@s"

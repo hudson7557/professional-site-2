@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { AppData } from './models/app-data';
-import { TextSectionData } from './models/text-section-data';
 
 @Injectable()
 export class AppContext {

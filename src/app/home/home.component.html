@@ -1,16 +1,18 @@
 <div *ngIf="context.getData() as appData"
     uk-grid
 >
+    <!-- Loop through the list of data and determine which sections to render -->
+    <ng-container *ngFor="let data of appData.data">
+        <app-text-section *ngIf="data.sectionType == 'text'"
+            [data]="data"
+        ></app-text-section>
 
-    <div *ngFor="let data of appData.data">
-        <div *ngIf="data.sectionType == 'text'">
-            <app-text-section [data]="data"></app-text-section>
-        </div>
-        <div *ngIf="data.sectionType == 'list'">
-            <app-list-section [data]="data"></app-list-section>
-        </div>
-        <div *ngIf="data.sectionType == 'technical'">
-            <app-technical-section [data]="data"></app-technical-section>
-        </div>
-    </div>
+        <app-list-section *ngIf="data.sectionType == 'list'"
+            [data]="data"
+        ></app-list-section>
+
+        <app-technical-section  *ngIf="data.sectionType == 'technical'"
+            [data]="data"
+        ></app-technical-section>
+    </ng-container>
 </div>
