@@ -4,9 +4,7 @@ import { AppData } from './models/app-data';
 @Injectable()
 export class AppContext {
 
-    /*
-    Provides stubbed data to aid in development
-    */
+    /** Provides stubbed data to aid in development. */
     public getData(): AppData {
         let stubData: AppData = {
             data: [

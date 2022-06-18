@@ -2,13 +2,12 @@
     class="uk-navbar uk-navbar-container"
 >
     <ul class="uk-navbar-nav">
-        <li class="uk-active">
-            <a routerLink="./">Home</a>
-        </li>
-        <li *ngFor="let data of appData.data"
-            class="uk-active"
-        >
-            <a routerLink="./" fragment="{{data.anchor}}">{{data.title}}</a>
+        <li *ngFor="let data of appData.data">
+            <a routerLink="./"
+                fragment="{{data.anchor}}"
+            >
+                {{data.title}}
+            </a>
         </li>
     </ul>
 </nav>
