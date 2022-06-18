@@ -1,23 +1,16 @@
-<div *ngIf="context.getData() as data"
+<div *ngIf="context.getData() as appData"
     uk-grid
 >
-    <app-text-section [data]="data.aboutMe"
-        class="uk-width-1-1"
-    ></app-text-section>
 
-    <app-text-section [data]="data.professionalExperience"
-        class="uk-width-1-1"
-    ></app-text-section>
-
-    <app-list-section [data]="data.languages"
-        class="uk-width-1-1"
-    ></app-list-section>
-
-    <app-technical-section [data]="data.typesOfProblems"
-        class="uk-width-1-1"
-    ></app-technical-section>
-
-    <app-text-section [data]="data.programmingPhilosophy"
-        class="uk-width-1-1"
-    ></app-text-section>
+    <div *ngFor="let data of appData.data">
+        <div *ngIf="data.sectionType == 'text'">
+            <app-text-section [data]="data"></app-text-section>
+        </div>
+        <div *ngIf="data.sectionType == 'list'">
+            <app-list-section [data]="data"></app-list-section>
+        </div>
+        <div *ngIf="data.sectionType == 'technical'">
+            <app-technical-section [data]="data"></app-technical-section>
+        </div>
+    </div>
 </div>

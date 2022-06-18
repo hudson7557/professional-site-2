@@ -1,6 +1,6 @@
 <div *ngIf="data">
     <app-section-header *ngIf="data.title" [title]="data.title"></app-section-header>
     <div>
-        {{data.content}}
+        {{data?.content}}
     </div>
 </div>

@@ -4,9 +4,5 @@ import { TextSectionData } from "./text-section-data";
 
 // Data for the entire app itself
 export interface AppData {
-    aboutMe: TextSectionData;
-    professionalExperience: TextSectionData;
-    languages: ListSectionData;
-    typesOfProblems: TechnicalSectionData;
-    programmingPhilosophy: TextSectionData;
+    data: (ListSectionData | TechnicalSectionData | TextSectionData)[];
 }
