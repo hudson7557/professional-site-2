@@ -4,7 +4,7 @@ import { TextSectionData } from './../models/text-section-data';
 @Component({
     selector: 'app-text-section',
     templateUrl: './text-section.component.html',
-    styleUrls: ['./text-section.component.scss'],
+    styleUrls: ['./text-section.component.scss']
 })
 export class TextSectionComponent {
 

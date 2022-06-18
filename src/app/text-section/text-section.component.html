@@ -1,6 +1,6 @@
-<div *ngIf="data" #{{data.anchor}}>
-    <app-section-header *ngIf="data.title" [title]="data.title"></app-section-header>
+<div *ngIf="data">
+    <h3 class="uk-text-center">{{data.title}}</h3>
     <div>
-        {{data?.content}}
+        {{data.content}}
     </div>
 </div>
