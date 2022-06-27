@@ -1,0 +1,11 @@
+@media(min-width: 640px) {
+    li {
+        padding-left: 50%;
+    }
+}
+
+@media(max-width: 640px) {
+    li {
+        padding-left: 35%;
+    }
+}

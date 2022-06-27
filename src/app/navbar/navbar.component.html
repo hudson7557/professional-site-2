@@ -1,13 +1,42 @@
+<div class="uk-visible@m">
+    <nav *ngIf="context.getData() as appData"
+        class="uk-navbar-container"
+        uk-navbar
+    >
+        <ul class="uk-navbar-nav">
+            <li *ngFor="let data of appData.data">
+                <a routerLink="./"
+                    fragment="{{data.anchor}}"
+                >
+                    {{data.title}}
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
 <nav *ngIf="context.getData() as appData"
-    class="uk-navbar uk-navbar-container"
+    class="uk-navbar-container uk-hidden@m "
+    uk-navbar
 >
-    <ul class="uk-navbar-nav">
-        <li *ngFor="let data of appData.data">
-            <a routerLink="./"
-                fragment="{{data.anchor}}"
-            >
-                {{data.title}}
-            </a>
-        </li>
-    </ul>
+    <div class="uk-navbar-center">
+        <h3 class="uk-margin-remove">Scott Hudson</h3>
+    </div>
+
+    <div class="uk-navbar-right">
+        <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
+    </div>
+
+    <div uk-dropdown>
+        <ul class="uk-nav uk-dropdown-nav uk-nav-divider">
+            <li *ngFor="let data of appData.data">
+                <a routerLink="./"
+                    fragment="{{data.anchor}}"
+                >
+                    {{data.title}}
+                </a>
+            </li>
+        </ul>
+    </div>
 </nav>
+

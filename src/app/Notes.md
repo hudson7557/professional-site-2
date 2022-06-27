@@ -29,3 +29,5 @@ The expandable sections need to be a component.
 Need a way to make sure that the ids for anchors are not the same... I don't super like linking off of the anchor ids but it does work... I think I create a validator for it that basically goes through the data model and ensures they're unique. I could also just do it numerically which is much more extensible and less error prone. 
 
 Have to find a way to track the active link, routerLinkActive doesn't work with the router fragments and dynamically generated routes.
+
+TODO: Add a function on nav click that removes uk-open from the uk-dropdown
