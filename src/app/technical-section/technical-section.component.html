@@ -1,3 +1,14 @@
 <div *ngIf="data">
     <h3 class="uk-text-center">{{data.title}}</h3>
+
+    <ul uk-accordion>
+        <li *ngFor="let sectionData of data.sections">
+            <a class="uk-accordion-title" href="#">
+                {{sectionData.title}}
+            </a>
+            <div class="uk-accordion-content">
+                {{sectionData.content}}
+            </div>
+        </li>
+    </ul>
 </div>

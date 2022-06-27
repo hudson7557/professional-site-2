@@ -46,6 +46,26 @@ export class AppContext {
                         {
                             title: 'Angular Salesforce Integrations',
                             content: 'Created apps for managing and summarizing inventory, contacts, accounts, and other data. Some are hosted on Salesforce, others standalone. Most are backed by a dotnet server, but some use frameworks like Nest.js to send and receive requests from Salesforce. Worked On Angular UI implementation Rest Callouts Rest Endpoints (On Salesforce and in the custom server) .NET server set up (beginner at this) SOQL queries and Apex data manipulation on Salesforce and in Angular.'
+                        },
+                        {
+                            title: 'iOS App',
+                            content: 'Blah'
+                        },
+                        {
+                            title: 'Angular Forms App',
+                            content: 'Blah2'
+                        },
+                        {
+                            title: 'Marketing Cloud Management',
+                            content: 'Blah3'
+                        },
+                        {
+                            title: 'Data Reporting Tools',
+                            content: 'Blah4'
+                        },
+                        {
+                            title: 'UI Design and Prototyping',
+                            content: 'Blah5'
                         }
                     ]
                 },
