@@ -49,23 +49,23 @@ export class AppContext {
                         },
                         {
                             title: 'iOS App',
-                            content: 'Blah'
+                            content: 'Worked on an iOS application to add new features and maintain or debug pre-existing features in response to user testing through test flight. I worked on adding features to the application such as saving user preferences and favorites. Worked on a generated calendar to display events stored in the database. Also added features that tied into other apps (mail, phone, etc.) and added additional menus, navigations, and views to the app. '
                         },
                         {
                             title: 'Angular Forms App',
-                            content: 'Blah2'
+                            content: 'This was a piece of reporting software that involved completing excessively long government reports. I was responsible for creating the forms in Angular using reactive forms. Along the way I created components for all of the types of input that the form could accept along with data validation rules. Some of the components that were created were simple styled inputs, others were components that created their own child components which used control value accessors to communicate with their parent components. This was done to create flexible pick lists or radio inputs that responded to the data received from the SQL database.'
                         },
                         {
                             title: 'Marketing Cloud Management',
-                            content: 'Blah3'
+                            content: 'Worked in Salesforce (SFDC) and Marketing Cloud (SFMC) to manage a clients SFMC instance. This involved writing AMPScript pages to allow users to manage their subscriptions, writing Apex schedulable batch jobs to manage and sync the data in SFMC with the data in the clients SFDC and providing routing maintenance of the data through single use jobs.'
                         },
                         {
                             title: 'Data Reporting Tools',
-                            content: 'Blah4'
+                            content: 'Used a C# server app to query a clients database and generate scheduled reports. The report builder used OpenXML to take SQL data and create the .xls business reports the client had requested. Some logic and styles were applied to cells as necessary. '
                         },
                         {
                             title: 'UI Design and Prototyping',
-                            content: 'Blah5'
+                            content: 'I actually applied this in this project and created a click through prototype of the project on Figma prior to beginning programing. That said, working as a consultant I have been the one to design and implement multiple interfaces. I have also worked as a TA for Oregon State Universities CS-352(Usability Engineering) where I graded projects based off of adherence to usability heuristics and helped develop usability curriculum. '
                         }
                     ]
                 },
@@ -77,7 +77,7 @@ export class AppContext {
                 },
                 {
                     title: 'Programming Style',
-                    anchor: 'philosophy',
+                    anchor: 'programming-style',
                     sectionType: 'text',
                     content: 'Stylistically I prefer to begin programming with some sort of pseudo code derived from requirements or a prototype design. I tend to like writing out the major logical steps in a process as comments and once I have a solid idea of what to do I proceed to actually writing the code. I try to break the code up into different files, components, and functions based upon logical grouping for the code and what the code is doing. I really enjoy programming that involves components so I feel particularly at home in Angular and Swift. As for testing, I typically test as I go and don’t write unit tests. It’s not that I don’t like them. I just usually don’t have the time/budget to write them. I also use GitHub/GitLab to commit and branch my work often to break projects up and ensure that the code is stable before pushing into a master branch. I usually commit after a logical chunk of code is completed.'
                 }
