@@ -33,12 +33,11 @@
 
     <div uk-dropdown="mode: click" id="my-id">
         <ul class="uk-nav uk-dropdown-nav uk-nav-divider">
-            <li *ngFor="let data of appData.data"
-                class=""
-            >
+            <li *ngFor="let data of appData.data">
                 <a routerLink="./"
                     fragment="{{data.anchor}}"
                     uk-toggle="target: #my-id; cls: uk-open"
+                    class="nav-padding"
                 >
                     {{data.title}}
                 </a>
