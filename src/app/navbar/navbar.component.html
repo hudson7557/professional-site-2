@@ -12,12 +12,16 @@
                 </a>
             </li>
         </ul>
+
+        <div class="uk-navbar-right">
+            <h3 class="uk-margin-remove">Scott Hudson</h3>
+        </div>
     </nav>
 </div>
 
 <nav *ngIf="context.getData() as appData"
-    class="uk-navbar-container uk-hidden@m "
-    uk-navbar
+    class="uk-navbar-container uk-navbar-transparent uk-hidden@m"
+    uk-navbar="mode: click"
 >
     <div class="uk-navbar-center">
         <h3 class="uk-margin-remove">Scott Hudson</h3>
@@ -27,11 +31,14 @@
         <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
     </div>
 
-    <div uk-dropdown>
+    <div uk-dropdown="mode: click" id="my-id">
         <ul class="uk-nav uk-dropdown-nav uk-nav-divider">
-            <li *ngFor="let data of appData.data">
+            <li *ngFor="let data of appData.data"
+                class=""
+            >
                 <a routerLink="./"
                     fragment="{{data.anchor}}"
+                    uk-toggle="target: #my-id; cls: uk-open"
                 >
                     {{data.title}}
                 </a>
