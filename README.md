@@ -18,4 +18,4 @@ To deploy:
 2. Once the build is complete, the docs folder will have been recreated. 
 3. Make sure to create a copy of [docs/index.html](docs/index.html) and rename it to 404.html per [GitHub pages documentation](https://docs.github.com/en)
 4. Ensure that the CNAME isn't being deleted (you'll see it being removed in the commit). If it is you'll have to reset the custom domain on github.
-5. Commit and push your changes.
+5. Commit and push changes.

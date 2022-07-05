@@ -45,7 +45,7 @@ export class AppContext {
                     sections: [
                         {
                             title: 'Angular Salesforce Integrations',
-                            content: 'Created apps for managing and summarizing inventory, contacts, accounts, and other data. Some are hosted on Salesforce, others standalone. Most are backed by a dotnet server, but some use frameworks like Nest.js to send and receive requests from Salesforce. Worked On Angular UI implementation Rest Callouts Rest Endpoints (On Salesforce and in the custom server) .NET server set up (beginner at this) SOQL queries and Apex data manipulation on Salesforce and in Angular.'
+                            content: 'Created apps for managing and summarizing inventory, contacts, accounts, and other common Salesforce data. Some are hosted on Salesforce, others standalone. Most are backed by a dotnet server, but some use frameworks like Nest.js to send and receive requests from Salesforce. Worked On Angular UI implementation Rest Callouts Rest Endpoints (On Salesforce and in the custom server) .NET server set up (beginner at this) SOQL queries and Apex data manipulation on Salesforce and in Angular.'
                         },
                         {
                             title: 'iOS App',
@@ -81,7 +81,13 @@ export class AppContext {
                     sectionType: 'text',
                     content: 'Stylistically I prefer to begin programming with some sort of pseudo code derived from requirements or a prototype design. I tend to like writing out the major logical steps in a process as comments and once I have a solid idea of what to do I proceed to actually writing the code. I try to break the code up into different files, components, and functions based upon logical grouping for the code and what the code is doing. I really enjoy programming that involves components so I feel particularly at home in Angular and Swift. As for testing, I typically test as I go and don’t write unit tests. It’s not that I don’t like them. I just usually don’t have the time/budget to write them. I also use GitHub/GitLab to commit and branch my work often to break projects up and ensure that the code is stable before pushing into a master branch. I usually commit after a logical chunk of code is completed.'
                 }
-            ]
+            ],
+            extraLinks: [
+                            {
+                                title: 'Get In Touch',
+                                anchor: 'getInTouch'
+                            }
+                        ]
         }
 
         return stubData;

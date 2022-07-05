@@ -11,6 +11,16 @@
                     {{data.title}}
                 </a>
             </li>
+
+            <!-- Non-generated links -->
+            <li *ngFor="let data of appData.extraLinks">
+                <a routerLink="./"
+                    fragment="{{data.anchor}}"
+                >
+                    {{data.title}}
+
+                </a>
+            </li>
         </ul>
 
         <div class="uk-navbar-right">
@@ -40,6 +50,18 @@
                     class="nav-padding"
                 >
                     {{data.title}}
+                </a>
+            </li>
+
+            <!-- Non-generated links -->
+            <li *ngFor="let data of appData.extraLinks">
+                <a routerLink="./"
+                    fragment="{{data.anchor}}"
+                    uk-toggle="target: #my-id; cls: uk-open"
+                    class="nav-padding"
+                >
+                    {{data.title}}
+
                 </a>
             </li>
         </ul>
