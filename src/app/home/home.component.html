@@ -2,6 +2,12 @@
     class="uk-padding"
     uk-grid
 >
+    <div class="uk-flex uk-flex-center uk-width-1-1">
+        <div class="image-container">
+            <img src="../../assets/images/profile-pic.jpg">
+        </div>
+    </div>
+
     <!-- Loop through the list of data and determine which sections to render -->
     <ng-container *ngFor="let data of appData.data">
         <a id="{{data.anchor}}"></a>
